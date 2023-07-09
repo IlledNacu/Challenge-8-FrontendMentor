@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left 0vw top 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    margin-top: 20%;
+}
+
+.box-left{
+    background-color: hsl(228, 56%, 26%);
+    width: 35%;
+    border-radius: 5px;
+    border-top-right-radius: 55px;
+    padding: 2em;
+}
+
+.box-left section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.logo{
+    margin-bottom: 25px;
+}
+
+.logo img{
+    width: 85%;
+}
+
+.box-left section picture{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.box-right{
+    width: 60%;
+    margin-left: 5%;
+    position: relative;
+}
+
+.bubble{
+    background-color: white;
+    height: 40%;
+    position: absolute;
+    align-self: right;
+    color: hsl(229, 7%, 55%);
+    font-variant: small-caps;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 60%;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: auto;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: 73.5%;
+	margin-bottom: -20px;
+}
+
+.bubble p{
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.bubble span{
+    color: hsl(229, 57%, 11%);
+    font-size: 36px;
+}
+
+.sample{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 71%;
+}
+
+span{
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+.var{
+    background-color: hsl(228, 55%, 18%);
+    height: 12px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.active-var{
+    height: 8px;
+    width: 80%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 50px;
+    padding: 1px;
+    display: flex;
+    justify-content: right;
+}
+
+.circle{
+    height: 6px;
+    width: 6px;
+    background-color:hsl(243, 100%, 93%);
+    border-radius: 100%;
+}
+
+.from-to{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.attribution{
+    margin: 10px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(243, 100%, 93%);
+}
+
+@media(max-width: 800px){
+
+    body{
+        background-image: url(images/bg-mobile.png);
+        background-position: left 0vw top 0vh;
+        background-size:100%;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-top: 40%;
+    }
+
+    .box-left{
+        width: 100%;
+    }
+
+    .box-right{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bubble::after{
+        content: none;
+    }
+
+    .bubble{
+        background-color: white;
+        height: 50%;
+        position: absolute;
+        align-self: right;
+        color: hsl(229, 7%, 55%);
+        font-variant: small-caps;
+        width: fit-content;
+        border-radius: 5px;
+        margin-left: 25%;
+        margin-top: 35%;
+    }
+
+    .attribution{
+        margin: 50px;
+    }
+
+}
