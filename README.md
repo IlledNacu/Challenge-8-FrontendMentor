@@ -19,14 +19,14 @@ This is a solution to the [Fylo data storage component](https://www.frontendment
 
 ### Screenshot
 
-![]()
-![]()
+![](./images/DesktopExample.jpg)
+![](./images/MobileExample.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution Repository]()
-- Live Site: [Live Site]()
+- Solution URL: [Solution Repository](https://github.com/IlledNacu/Challenge-8-FrontendMentor)
+- Live Site: [Live Site](https://illednacu.github.io/Challenge-8-FrontendMentor/)
 
 
 ### Built with
